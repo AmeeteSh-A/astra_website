@@ -2,9 +2,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroNebula from "../assets/hero-nebula.jpg";
-import telescopeIcon from "../assets/telescope-icon.png";
-import planetIllustration from "../assets/planet-illustration.png";
-import FloatingImage from "./FloatingImage";
 
 const Hero = () => {
   return (
@@ -24,23 +21,6 @@ const Hero = () => {
 
       {/* Animated Starfield */}
       <div className="absolute inset-0 starfield z-10"></div>
-
-      {/* Floating Elements */}
-      <FloatingImage
-        src={telescopeIcon}
-        alt="Telescope"
-        className="absolute top-1/4 right-1/4 w-20 h-20 opacity-60"
-        animate={{ y: [0, -20, 0], duration: 6 }}
-        imageClassName="w-full h-full animate-rotate-slow"
-      />
-
-      <FloatingImage
-        src={planetIllustration}
-        alt="Planet"
-        className="absolute bottom-1/4 left-1/6 w-32 h-32 opacity-50"
-        animate={{ y: [0, 15, 0], duration: 8 }}
-        imageClassName="w-full h-full"
-      />
 
       {/* Main Content */}
       <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
@@ -91,22 +71,6 @@ const Hero = () => {
             <Calendar className="w-5 h-5 mr-2" />
             Upcoming Events
           </Link>
-        </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-        >
-          <div className="w-6 h-10 border-2 border-cosmic-cyan rounded-full flex justify-center">
-            <motion.div
-              className="w-1 h-3 bg-cosmic-cyan rounded-full mt-2"
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </div>
         </motion.div>
       </div>
     </section>
