@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import heroNebula from "../assets/hero-nebula.jpg";
 import telescopeIcon from "../assets/telescope-icon.png";
 import planetIllustration from "../assets/planet-illustration.png";
+import FloatingImage from "./FloatingImage";
 
 const Hero = () => {
   return (
@@ -25,29 +26,21 @@ const Hero = () => {
       <div className="absolute inset-0 starfield z-10"></div>
 
       {/* Floating Elements */}
-      <motion.div
+      <FloatingImage
+        src={telescopeIcon}
+        alt="Telescope"
         className="absolute top-1/4 right-1/4 w-20 h-20 opacity-60"
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <img
-          src={telescopeIcon}
-          alt="Telescope"
-          className="w-full h-full animate-rotate-slow"
-        />
-      </motion.div>
+        animate={{ y: [0, -20, 0], duration: 6 }}
+        imageClassName="w-full h-full animate-rotate-slow"
+      />
 
-      <motion.div
+      <FloatingImage
+        src={planetIllustration}
+        alt="Planet"
         className="absolute bottom-1/4 left-1/6 w-32 h-32 opacity-50"
-        animate={{ y: [0, 15, 0] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <img
-          src={planetIllustration}
-          alt="Planet"
-          className="w-full h-full"
-        />
-      </motion.div>
+        animate={{ y: [0, 15, 0], duration: 8 }}
+        imageClassName="w-full h-full"
+      />
 
       {/* Main Content */}
       <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
