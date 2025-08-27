@@ -2,95 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
+/* Cosmic Physics & Astronomy Club Design System */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cosmic Color Palette - Dark Space Theme */
+    --background: 210 29% 6%;           /* Deep space black #0b0c10 */
+    --foreground: 177 92% 70%;          /* Bright cosmic cyan #66fcf1 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 200 25% 16%;               /* Dark cosmic gray #1f2833 */
+    --card-foreground: 200 3% 78%;      /* Light cosmic gray #c5c6c7 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 200 25% 16%;
+    --popover-foreground: 200 3% 78%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 177 39% 46%;            /* Cosmic teal #45a29e */
+    --primary-foreground: 210 29% 6%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 200 25% 16%;          /* Dark cosmic */
+    --secondary-foreground: 177 92% 70%; /* Bright cyan */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 200 25% 12%;
+    --muted-foreground: 200 3% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 177 92% 70%;             /* Bright cosmic cyan */
+    --accent-foreground: 210 29% 6%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 200 25% 20%;
+    --input: 200 25% 16%;
+    --ring: 177 92% 70%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Cosmic Specific Colors */
+    --space-dark: 210 29% 6%;          /* Deep space */
+    --space-medium: 200 25% 16%;       /* Medium space */
+    --cosmic-teal: 177 39% 46%;        /* Main teal */
+    --cosmic-cyan: 177 92% 70%;        /* Bright cyan */
+    --cosmic-light: 200 3% 78%;        /* Light gray */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Cosmic Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(210 29% 6%), hsl(200 25% 16%), hsl(177 39% 46%));
+    --gradient-nebula: linear-gradient(45deg, hsl(177 39% 46%), hsl(177 92% 70%), hsl(210 29% 6%));
+    --gradient-starfield: radial-gradient(circle at 50% 50%, hsl(177 92% 70% / 0.1), hsl(210 29% 6%));
+    
+    /* Cosmic Shadows */
+    --shadow-cosmic: 0 0 20px hsl(177 92% 70% / 0.3);
+    --shadow-glow: 0 0 40px hsl(177 39% 46% / 0.4);
+    --shadow-deep: 0 10px 50px hsl(210 29% 6% / 0.8);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Animation Variables */
+    --transition-cosmic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease, transform 0.3s ease;
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar colors for cosmic theme */
+    --sidebar-background: 200 25% 16%;
+    --sidebar-foreground: 200 3% 78%;
+    --sidebar-primary: 177 39% 46%;
+    --sidebar-primary-foreground: 210 29% 6%;
+    --sidebar-accent: 200 25% 12%;
+    --sidebar-accent-foreground: 177 92% 70%;
+    --sidebar-border: 200 25% 20%;
+    --sidebar-ring: 177 92% 70%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark mode already perfect for space theme */
+    --background: 210 29% 6%;
+    --foreground: 177 92% 70%;
+    --card: 200 25% 16%;
+    --card-foreground: 200 3% 78%;
+    --popover: 200 25% 16%;
+    --popover-foreground: 200 3% 78%;
+    --primary: 177 39% 46%;
+    --primary-foreground: 210 29% 6%;
+    --secondary: 200 25% 16%;
+    --secondary-foreground: 177 92% 70%;
+    --muted: 200 25% 12%;
+    --muted-foreground: 200 3% 60%;
+    --accent: 177 92% 70%;
+    --accent-foreground: 210 29% 6%;
+    --border: 200 25% 20%;
+    --input: 200 25% 16%;
+    --ring: 177 92% 70%;
   }
 }
 
@@ -100,6 +96,112 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    background-image: var(--gradient-starfield);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Cosmic Button Variants */
+  .btn-cosmic {
+    @apply bg-gradient-to-r from-cosmic-teal to-cosmic-cyan text-space-dark font-medium px-6 py-3 rounded-lg;
+    @apply hover:shadow-cosmic transform hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-ghost-cosmic {
+    @apply border border-cosmic-cyan text-cosmic-cyan bg-transparent;
+    @apply hover:bg-cosmic-cyan hover:text-space-dark hover:shadow-glow;
+    @apply transition-all duration-300;
+  }
+
+  .btn-hero {
+    @apply bg-gradient-to-r from-cosmic-teal to-cosmic-cyan text-space-dark font-bold px-8 py-4 rounded-xl;
+    @apply hover:shadow-cosmic transform hover:scale-110 transition-all duration-300;
+    @apply shadow-lg font-heading text-lg;
+  }
+
+  /* Cosmic Card */
+  .card-cosmic {
+    @apply bg-card/80 backdrop-blur-sm border border-cosmic-teal/30 rounded-xl;
+    @apply shadow-deep hover:shadow-cosmic transition-all duration-300;
+    @apply hover:border-cosmic-cyan/50;
+  }
+
+  /* Starfield Animation */
+  .starfield {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .starfield::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(2px 2px at 20% 30%, hsl(177 92% 70%), transparent),
+      radial-gradient(1px 1px at 40% 70%, hsl(177 39% 46%), transparent),
+      radial-gradient(1px 1px at 90% 40%, hsl(177 92% 70%), transparent),
+      radial-gradient(1px 1px at 60% 10%, hsl(200 3% 78%), transparent);
+    animation: twinkle 4s ease-in-out infinite alternate;
+  }
+
+  /* Cosmic Text Effects */
+  .text-glow {
+    text-shadow: 0 0 10px hsl(177 92% 70% / 0.5);
+  }
+
+  .text-cosmic-gradient {
+    background: linear-gradient(135deg, hsl(177 39% 46%), hsl(177 92% 70%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  /* Animation Keyframes */
+  @keyframes twinkle {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(177 92% 70% / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(177 92% 70% / 0.6); }
+  }
+
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* Custom Animation Classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-rotate-slow {
+    animation: rotate-slow 20s linear infinite;
+  }
+
+  .animate-twinkle {
+    animation: twinkle 4s ease-in-out infinite alternate;
   }
 }

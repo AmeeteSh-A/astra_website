@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heading': ['Orbitron', 'sans-serif'],
+				'body': ['Roboto', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Cosmic theme specific colors
+				'space-dark': 'hsl(var(--space-dark))',
+				'space-medium': 'hsl(var(--space-medium))',
+				'cosmic-teal': 'hsl(var(--cosmic-teal))',
+				'cosmic-cyan': 'hsl(var(--cosmic-cyan))',
+				'cosmic-light': 'hsl(var(--cosmic-light))',
+			},
+			backgroundImage: {
+				'gradient-cosmic': 'var(--gradient-cosmic)',
+				'gradient-nebula': 'var(--gradient-nebula)',
+				'gradient-starfield': 'var(--gradient-starfield)',
+			},
+			boxShadow: {
+				'cosmic': 'var(--shadow-cosmic)',
+				'glow': 'var(--shadow-glow)',
+				'deep': 'var(--shadow-deep)',
+			},
+			transitionProperty: {
+				'cosmic': 'var(--transition-cosmic)',
+				'glow': 'var(--transition-glow)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -88,7 +112,11 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'rotate-slow': 'rotate-slow 20s linear infinite',
+				'twinkle': 'twinkle 4s ease-in-out infinite alternate'
 			}
 		}
 	},
