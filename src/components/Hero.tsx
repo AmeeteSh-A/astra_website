@@ -46,7 +46,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Welcome to the <span className="text-cosmic-cyan font-semibold">Physics & Astronomy Club</span>
+          Welcome to <span className="text-cosmic-cyan font-semibold">ASTRA</span>
         </motion.p>
 
         <motion.div

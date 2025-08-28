@@ -40,7 +40,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <h3 className="font-heading font-bold text-xl text-cosmic-cyan mb-4">
-              Physics & Astronomy Club
+              ASTRA ( Physics & Astronomy Club )
             </h3>
             <p className="text-cosmic-light text-sm mb-4 leading-relaxed">
               Exploring the wonders of the universe through hands-on experiments, 
@@ -49,15 +49,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center text-cosmic-light text-sm">
                 <MapPin className="w-4 h-4 mr-2 text-cosmic-cyan" />
-                University Physics Building, Room 301
+                CS233, PCM Block, SAU
               </div>
               <div className="flex items-center text-cosmic-light text-sm">
                 <Mail className="w-4 h-4 mr-2 text-cosmic-cyan" />
-                physics.club@university.edu
+                astra@sau.int
               </div>
               <div className="flex items-center text-cosmic-light text-sm">
                 <Phone className="w-4 h-4 mr-2 text-cosmic-cyan" />
-                +1 (555) 123-4567
+                1234567890
               </div>
             </div>
           </motion.div>
@@ -166,7 +166,7 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <p className="text-cosmic-light text-sm mb-4 sm:mb-0">
-            © 2024 Physics & Astronomy Club. Exploring the cosmos together.
+            © 2025 ASTRA (Physics & Astronomy Club), SAU. Exploring the cosmos together.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-cosmic-light hover:text-cosmic-cyan transition-colors duration-300">

@@ -30,7 +30,7 @@ const Navigation = () => {
               <div className="absolute inset-0 w-8 h-8 bg-cosmic-cyan/20 rounded-full animate-pulse-glow"></div>
             </div>
             <span className="font-heading font-bold text-xl text-glow">
-              <span className="text-cosmic-gradient">Physics & Astronomy Club</span>
+              <span className="text-cosmic-gradient">ASTRA</span>
             </span>
           </Link>
 

@@ -7,9 +7,9 @@ const Resources = () => {
       title: "Essential Reading",
       icon: <BookOpen className="w-6 h-6" />,
       items: [
-        { name: "Cosmos by Carl Sagan", type: "Book", url: "#" },
-        { name: "The Elegant Universe", type: "Book", url: "#" },
-        { name: "Astrophysics for People in a Hurry", type: "Book", url: "#" },
+        { name: "Example Book 1", type: "Book", url: "#" },
+        { name: "Example Book 2 ", type: "Book", url: "#" },
+        { name: "Example Book 3", type: "Book", url: "#" },
         { name: "Quantum Physics Papers", type: "Research", url: "#" }
       ]
     },

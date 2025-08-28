@@ -4,67 +4,23 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const Members = () => {
   const facultyMembers = [
-    {
-      name: "Dr. Jyotsana Sharma",
-      role: "Faculty Patron",
-      initials: "JS"
-    },
-    {
-      name: "Dr. Ankita Gaur",
-      role: "Learning & Research Lead",
-      initials: "AG"
-    },
-    {
-      name: "Dr. Preeti Bhandari",
-      role: "Operations & Outreach Lead",
-      initials: "PB"
-    }
+    { name: "Dr. Jyotsana Sharma", role: "Faculty Patron", initials: "JS" },
+    { name: "Dr. Ankita Gaur", role: "Learning & Research Lead", initials: "AG" },
+    { name: "Dr. Preeti Bhandari", role: "Operations & Outreach Lead", initials: "PB" },
   ];
 
   const leadership = [
-    {
-      name: "Amritha S. Nair",
-      role: "Convener",
-      initials: "AN"
-    },
-    {
-      name: "Arnav Srivastava",
-      role: "Co-Convener",
-      initials: "AS"
-    }
+    { name: "Amritha S. Nair", role: "Convener", initials: "AN" },
+    { name: "Arnav Srivastava", role: "Co-Convener", initials: "AS" },
   ];
 
   const coreTeam = [
-    {
-      name: "Kishlay",
-      role: "Treasurer",
-      initials: "K"
-    },
-    {
-      name: "Harkeerat",
-      role: "Technical Head",
-      initials: "H"
-    },
-    {
-      name: "Ansh",
-      role: "Research Coordinator",
-      initials: "A"
-    },
-    {
-      name: "Anushka",
-      role: "Event Head",
-      initials: "An"
-    },
-    {
-      name: "Ameetesh",
-      role: "Design & Media Lead",
-      initials: "Am"
-    },
-    {
-      name: "Nikhil",
-      role: "Content Editor",
-      initials: "N"
-    }
+    { name: "Kishlay", role: "Treasurer", initials: "K" },
+    { name: "Harkeerat", role: "Technical Head", initials: "H" },
+    { name: "Ansh", role: "Research Coordinator", initials: "A" },
+    { name: "Anushka", role: "Event Head", initials: "An" },
+    { name: "Ameetesh", role: "Design & Media Lead", initials: "Am" },
+    { name: "Nikhil", role: "Content Editor", initials: "N" },
   ];
 
   const teamMembers = [
@@ -76,27 +32,25 @@ const Members = () => {
     "Tarun Das", "Srija Das", "Tanmay Madan", "Mukund Devang",
     "Aditya Adhikari", "Laqshya Chawan", "Intekhab Akhtar", "Devika Nair",
     "Rushil Sharma", "Saveer Singh Sheokand", "Asavari Nautiyal", "Lakshya Anand",
-    "Prakhar Parashar", "Madhav Dhakal", "Shaurya Singh", "Madan Mohan Pushkar"
+    "Prakhar Parashar", "Madhav Dhakal", "Shaurya Singh", "Madan Mohan Pushkar",
   ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
+      transition: { staggerChildren: 0.1 },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
-    <div className="min-h-screen bg-gradient-cosmic pt-20">
-      <div className="container mx-auto px-4 py-16">
+    <div className="min-h-screen py-20 px-4"> {/* <-- THIS LINE IS CHANGED */}
+      <div className="container mx-auto py-16">
         {/* Header */}
         <motion.div
           className="text-center mb-16"

@@ -5,8 +5,8 @@ const Blog = () => {
   const blogPosts = [
     {
       title: "The Mystery of Dark Matter: What We Know So Far",
-      author: "Sarah Chen",
-      date: "2024-01-12",
+      author: "Ameetesh Awadh",
+      date: "2025-09-02",
       readTime: "8 min read",
       excerpt: "Exploring the invisible substance that makes up 85% of all matter in the universe and the ongoing efforts to detect it directly.",
       category: "Cosmology",
@@ -14,8 +14,8 @@ const Blog = () => {
     },
     {
       title: "Building Our Radio Telescope: A Student's Journey",
-      author: "Alex Rodriguez", 
-      date: "2024-01-08",
+      author: "Amritha S Nair", 
+      date: "2025-09-22",
       readTime: "6 min read",
       excerpt: "A detailed account of our club's ambitious project to construct a radio telescope from scratch and the lessons learned along the way.",
       category: "DIY Projects",
@@ -23,8 +23,8 @@ const Blog = () => {
     },
     {
       title: "Quantum Entanglement Explained Simply",
-      author: "Dr. Maria Santos",
-      date: "2024-01-05",
+      author: "Harkeerat Singh",
+      date: "2025-10-05",
       readTime: "10 min read", 
       excerpt: "Breaking down one of quantum mechanics' most fascinating phenomena in terms that everyone can understand.",
       category: "Quantum Physics",
@@ -32,8 +32,8 @@ const Blog = () => {
     },
     {
       title: "Photographing the Night Sky: Tips for Beginners",
-      author: "James Park",
-      date: "2024-01-02",
+      author: "Arnav Srivastava",
+      date: "2025-11-02",
       readTime: "5 min read",
       excerpt: "Essential techniques and equipment recommendations for capturing stunning astrophotography images.",
       category: "Astrophotography",
@@ -41,8 +41,8 @@ const Blog = () => {
     },
     {
       title: "The Physics of Black Holes: Beyond the Event Horizon",
-      author: "Prof. David Kim",
-      date: "2023-12-28",
+      author: "Nikhil Ria",
+      date: "2025-12-28",
       readTime: "12 min read",
       excerpt: "Delving into the extreme physics that occurs near black holes and what recent observations have taught us.",
       category: "Theoretical Physics",

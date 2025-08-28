@@ -5,27 +5,27 @@ const Events = () => {
   const upcomingEvents = [
     {
       title: "Stargazing Night",
-      date: "2024-01-15",
+      date: "2025-Sep-15",
       time: "8:00 PM - 11:00 PM",
-      location: "University Observatory",
+      location: "University Amphi-theater",
       attendees: 45,
       description: "Join us for an evening of celestial observation with our professional telescopes."
     },
     {
       title: "Physics Lab Workshop", 
-      date: "2024-01-22",
+      date: "2025-Oct-22",
       time: "2:00 PM - 5:00 PM",
-      location: "Physics Building Lab 201",
+      location: "Physics Lab (LS 004), LS-ES Block",
       attendees: 25,
       description: "Hands-on experiments with quantum mechanics and particle physics equipment."
     },
     {
-      title: "Guest Lecture: Black Holes",
-      date: "2024-01-28",
+      title: "Guest Lecture: Black Holes by Dr. Jyotsna Sharma",
+      date: "2025-Nov-28",
       time: "7:00 PM - 8:30 PM", 
-      location: "Auditorium A",
+      location: "ES 311, LS-ES Block",
       attendees: 120,
-      description: "Dr. Sarah Chen presents her latest research on black hole event horizons."
+      description: "Dr. Jyotsna Sharma presents her latest research on black hole event horizons."
     }
   ];
 

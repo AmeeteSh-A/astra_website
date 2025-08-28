@@ -3,6 +3,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// 1. IMPORT YOUR NEW COMPONENT
+import ScrollToTop from "./components/ScrollToTop"; 
+
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Index from "./pages/Index";
@@ -24,6 +28,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        
+        <ScrollToTop />
         <div className="min-h-screen bg-background">
           <Navigation />
           <main className="pt-16">
@@ -37,7 +43,6 @@ const App = () => (
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/members" element={<Members />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -26,17 +26,17 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Visit Us",
-      details: ["University Physics Building", "Room 301, 3rd Floor", "123 University Ave"]
+      details: ["Room 233, 2nd Floor", "PCM Block", "South Asian University" ]
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us", 
-      details: ["physics.club@university.edu", "president@physicsclub.org"]
+      details: ["astra@sau.int", "jyotsna@sau.int"]
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "Office Hours Only"]
+      details: ["1234567890", "Office Hours Only"]
     },
     {
       icon: <Clock className="w-6 h-6" />,

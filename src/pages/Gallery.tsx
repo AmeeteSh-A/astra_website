@@ -15,7 +15,7 @@ const Gallery = () => {
       type: "Planetary",
       date: "2024-01-05", 
       description: "High-resolution image showing Galilean satellites",
-      image: "https://images.unsplash.com/photo-1614642264762-65af9aca4472?w=800&h=600&fit=crop"
+      image: "https://images.unsplash.com/photo-1708257106556-c7a27af25a06?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       title: "Andromeda Galaxy",
@@ -29,7 +29,7 @@ const Gallery = () => {
       type: "Solar",
       date: "2023-10-14",
       description: "Partial eclipse captured from university campus",
-      image: "https://images.unsplash.com/photo-1566024164372-0281cbf7ac65?w=800&h=600&fit=crop"
+      image: "https://images.unsplash.com/photo-1529788295308-1eace6f67388?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       title: "Saturn's Rings", 

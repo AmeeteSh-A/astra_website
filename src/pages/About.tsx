@@ -3,10 +3,10 @@ import { Users, Target, Clock, Award } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: <Users className="w-8 h-8" />, number: "150+", label: "Active Members" },
-    { icon: <Target className="w-8 h-8" />, number: "25+", label: "Research Projects" },
-    { icon: <Clock className="w-8 h-8" />, number: "5", label: "Years Active" },
-    { icon: <Award className="w-8 h-8" />, number: "10+", label: "Awards Won" },
+    { icon: <Users className="w-8 h-8" />, number: "40+", label: "Active Members" },
+    { icon: <Target className="w-8 h-8" />, number: "5", label: "Research Projects" },
+    { icon: <Clock className="w-8 h-8" />, number: "1", label: "Months Active" },
+    { icon: <Award className="w-8 h-8" />, number: "3+", label: "Awards Won" },
   ];
 
   return (
@@ -19,9 +19,9 @@ const About = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-heading font-bold text-4xl md:text-6xl mb-6">
-            <span className="text-cosmic-gradient">About Our</span>
+            <span className="text-cosmic-gradient">About</span>
             <br />
-            <span className="text-cosmic-cyan">Cosmic Community</span>
+            <span className="text-cosmic-cyan">ASTRA</span>
           </h1>
           <p className="text-xl text-cosmic-light max-w-3xl mx-auto">
             We are a passionate community of students and faculty dedicated to exploring 
