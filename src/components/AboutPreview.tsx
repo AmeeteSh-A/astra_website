@@ -46,7 +46,7 @@ const AboutPreview = () => {
             </h2>
             
             <p className="text-lg text-cosmic-light mb-8 leading-relaxed">
-              Our Physics & Astronomy Club brings together passionate students to explore the 
+              Our Physics & Technology Club brings together passionate students to explore the 
               wonders of the universe. From theoretical physics to practical stargazing, 
               we make science accessible and exciting for everyone.
             </p>
